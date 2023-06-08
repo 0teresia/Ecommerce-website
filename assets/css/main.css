@@ -1,0 +1,264 @@
+.Collections-container {
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+  
+.collection-item {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+  height: 180px;
+  padding: 0 .8rem;
+}
+
+.collection-item .one {
+  background: url('assets/images/furniture.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+  
+.collection-item .two {
+  background: url('assets/images/laundry-basket.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+  
+.collection-item .content {
+ position: relative;
+}
+
+.collection-item h1 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+  
+.collection-item a {
+  font-family: 'Dosis', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 33px;
+  text-align: center;
+  width: 50%;
+  position: absolute;
+  text-decoration-line: underline;
+  color: #000000;
+  text-transform: uppercase;
+  bottom: 10%;
+  left: 20%;
+  transform: translateX(-50%);
+  margin-left: .8rem;
+}
+
+.shop-link{
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  /*justify-content: center;*/
+  }
+
+.hr-line{
+  width: 25px;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  bottom: 10%;
+  left:calc (80% + 16px);
+  right: 80%;
+  transform: translateX(-50%);
+}
+  
+/*.collection-item a::after {
+  content: '';
+  width: 25px;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  right: -30%;
+  bottom: 50%;
+} */
+
+@media (min-width:768px) {
+  .collection-item {
+    flex-direction: row;
+  }
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  margin-top: 100px;
+}
+.message .Products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+  
+.message .Products .product.item {
+  flex: 1 1 33.33%;
+  position: relative;
+  overflow: hidden;
+}
+  
+ .message .Products .product.item img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+  
+  
+.message .Products .product.item h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+  .message .Products .product.item p{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+  }
+   
+  .News {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .News .product.item {
+    position: relative;
+  }
+  
+  .News .product.item img {
+    width: 100%;
+    height: auto;
+  }
+  
+.News .product.item .date{
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+.News .product.item .day-month {
+  border: 1px solid rgba(139, 135, 139, 0.13);
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.News .product.item .day{
+  font-size: 30px;
+  font-weight: 500;
+}
+.News .product.item .month{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+  
+.News .product.item h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+  
+.News .product.item a {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 6px 12px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: -20px; 
+}
+  
+.News .product.item a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+  
+@media (max-width:700px){
+  .product.item{
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width:701px) and (max-width: 900px){
+  .product.item{
+     flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (min-width:901px){
+  .product.item{
+    flex-basis: calc(33.3% - 20px);
+  }
+}

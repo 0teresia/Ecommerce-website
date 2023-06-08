@@ -1,0 +1,124 @@
+.hero {
+  height: 100vh;
+  background: url('assets/images/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-attachment: scroll;
+  padding: 20px;
+}
+.hero .background-image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: url('assets/images/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.hero .headline {
+  background-color: rgba(255, 255, 255, 0.78);
+  padding: 35px 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 340px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero .container {
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  top: 10px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.headline h1 {
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+ul li {
+  list-style: none;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+@media (max-width:900px) {
+  .mainmenu {
+    display: none;
+  }
+}
+
+.navicon {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.mainmenu ul {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mainmenu a {
+  color: white;
+}
+
+.mainmenu li {
+  margin-right: 12%;
+}
+
+.mainmenu li:first-child {
+  margin-left: 12%;
+}
+
+.shopnow_btn {
+  font-family: 'dosis', sans-serif;
+  text-transform: uppercase;
+  color: black;
+  border-bottom: 0.5px solid black;
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+@media (min-width:900px) {
+  .hero .headline {
+    width: 450px;
+    padding: 45px 30px;
+  }
+}
