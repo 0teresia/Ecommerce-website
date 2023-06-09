@@ -1,12 +1,12 @@
 .hero {
-  height: 100vh;
-  background: url('assets/images/hero.jpg');
+  height: 10vh;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100% 100%;
-  background-attachment: scroll;
-  padding: 20px;
+  background-size: cover;
+  padding: 10px;
+  margin-bottom: 20px;
 }
+
 .hero .background-image {
   position: relative;
   z-index: 1;
@@ -16,7 +16,6 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-attachment: scroll;
 }
 
 .hero .headline {
@@ -32,15 +31,6 @@
   transform: translate(-50%, -50%);
 }
 
-.hero .container {
-  width: 90%;
-  margin: 0 auto;
-  position: absolute;
-  top: 10px;
-  display: flex;
-  justify-content: space-between;
-  z-index: 1;
-}
 
 .headline h1 {
   font-weight: 400;
@@ -63,7 +53,7 @@ ul li {
   z-index: 1;
 }
 
-@media (max-width:900px) {
+@media (max-width: 900px) {
   .mainmenu {
     display: none;
   }
@@ -105,10 +95,12 @@ ul li {
   color: black;
   border-bottom: 0.5px solid black;
 }
+
 .logo {
   position: absolute;
   top: 10px;
   left: 10px;
+  z-index: 1;
 }
 
 .logo img {
@@ -116,7 +108,7 @@ ul li {
   height: auto;
 }
 
-@media (min-width:900px) {
+@media (min-width: 900px) {
   .hero .headline {
     width: 450px;
     padding: 45px 30px;

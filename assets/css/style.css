@@ -1,12 +1,4 @@
-header {
-  margin-bottom: 20px;
-}
-
-main {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-footer {
-  margin-top: 20px;
+body {
+  margin: 0;
+  padding: 0;
 }
